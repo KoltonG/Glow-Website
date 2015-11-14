@@ -1,0 +1,23 @@
+{
+  "name": "glow-site",
+  "version": "0.0.0",
+  "description": "glow app site",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/KoltonG/Glow-Website.git"
+  },
+  "keywords": [
+    "glow",
+    "app"
+  ],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KoltonG/Glow-Website/issues"
+  },
+  "homepage": "https://github.com/KoltonG/Glow-Website#readme"
+}
