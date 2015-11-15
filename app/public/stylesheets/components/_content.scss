@@ -71,4 +71,32 @@
 			}
 		}
 	}
+
+	@media (max-height: 730px) {
+		.logo-container {
+			height: 70%;
+			top: 15%;
+		}
+	}
+
+	@media (max-height: 600px) {
+		.logo-container {
+			height: 80%;
+			top: 10%;
+		}
+	}
+
+	@media (max-height: 500px) {
+		.logo-container {
+			height: 90%;
+			top: 5%;
+		}
+	}
+
+	@media (max-height: 450px) {
+		.logo-container {
+			height: 95%;
+			top: 2.5%;
+		}
+	}
 }
