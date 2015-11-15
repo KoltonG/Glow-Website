@@ -1,0 +1,26 @@
+{
+  "apps" : [{
+      "name"              : "Glow-Web-Server-9000",
+      "script"            : "app.js",
+      "watch"             : false,
+      "exec_mode"         : "fork_mode",
+      "max_restarts"      : 15,
+      "max_memory_restart": "300M",
+      "restart_delay"     : 5000,
+      "env_production"    : {
+        "NODE_ENV": "production",
+        "PORT": 9000
+      }
+    }],
+  "deploy" : {
+    "GlowWS01-Production" : {
+      "user" : "ubuntu",
+      "host" : "ec2-52-91-85-101.compute-1.amazonaws.com",
+      "key"  : "/Users/KoltonG/.ssh/aws",
+      "ref"  : "origin/master",
+      "repo" : "git@github.com:KoltonG/Glow-Website.git",
+      "path" : "/home/ubuntu/",
+      "post-deploy" : "sudo npm install --production && pm2 startOrRestart ecosystem.json --env production && sudo pm2 logrotate -u ubuntu && sudo pm2 startup -u ubuntu && sudo pm2 save -u ubuntu"
+    }
+  }
+}
