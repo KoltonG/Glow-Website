@@ -4,7 +4,10 @@
   "description": "glow app site",
   "main": "app.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start" : "PORT=9000 node app.js | bunyan",
+    "prod"  : "PORT=9000 NODE_ENV=production node app.js | bunyan",
+    "debug" : "PORT=9000 node-debug app.js | bunyan",
+    "test"  : "PORT=9000 mocha 'app/test/**/*.js' --reporter spec"
   },
   "repository": {
     "type": "git",
@@ -19,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/KoltonG/Glow-Website/issues"
   },
-  "homepage": "https://github.com/KoltonG/Glow-Website#readme"
+  "homepage": "https://github.com/KoltonG/Glow-Website#readme",
+  "dependencies": {
+    "angular": "^1.4.3",
+    "bluebird": "~2.10.0",
+    "body-parser": "~1.13.2",
+    "bunyan": "^1.5.1",
+    "express": "~4.13.1",
+    "jade": "~1.11.0",
+    "node-sass-middleware": "^0.9.6",
+    "superagent": "^1.4.0"
+  }
 }

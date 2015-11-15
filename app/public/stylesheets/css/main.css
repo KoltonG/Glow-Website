@@ -1,0 +1,182 @@
+/* line 1, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/base/_style.scss */
+html,
+body {
+  height: 100%;
+  width: 100%;
+}
+
+/* line 7, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/base/_style.scss */
+body {
+  margin: 0;
+  font-family: 'Roboto';
+}
+
+/* line 12, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/base/_style.scss */
+.page-wrapper {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+/* line 18, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/base/_style.scss */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+
+/* line 1, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_background.scss */
+.background {
+  height: 100%;
+  width: 100%;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url(background.jpg);
+  background-size: cover;
+}
+
+/* line 1, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_content.scss */
+.content {
+  width: 50%;
+  height: 100%;
+  left: 25%;
+  top: 0;
+  position: absolute;
+}
+
+@media (max-width: 1025px) {
+  /* line 10, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_content.scss */
+  .content {
+    width: 75%;
+    left: 12.5%;
+  }
+}
+
+@media (max-width: 680px) {
+  /* line 17, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_content.scss */
+  .content {
+    width: 100%;
+    left: 0;
+  }
+}
+
+/* line 1, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_footer.scss */
+footer {
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  position: absolute;
+}
+
+/* line 8, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_footer.scss */
+footer .inner {
+  width: 25%;
+  height: 100%;
+  position: absolute;
+  left: 37.5%;
+  padding: 15px 5px;
+  box-sizing: border-box;
+}
+
+/* line 16, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_footer.scss */
+footer .inner h6 {
+  display: inline-block;
+  width: 25%;
+  text-align: center;
+  color: #fff;
+  font-weight: 100;
+}
+
+@media (max-width: 710px) {
+  /* line 26, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/layout/_footer.scss */
+  footer .inner {
+    width: 50%;
+    left: 25%;
+  }
+}
+
+/* line 2, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container {
+  position: absolute;
+  height: 60%;
+  top: 20%;
+  width: 100%;
+}
+
+/* line 8, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .logo {
+  width: 100%;
+  background-image: url(logo.png);
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+  background-position: calc(50% + 11px);
+  height: 200px;
+}
+
+/* line 17, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .name {
+  text-align: center;
+  width: 100%;
+  color: #FFF;
+  margin-top: 10px;
+}
+
+/* line 23, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .name h1 {
+  font-size: 40px;
+  font-weight: 300;
+  margin: 0;
+}
+
+/* line 29, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .name h3 {
+  margin: 0;
+  margin-top: 5px;
+  font-weight: 100;
+  font-size: 23px;
+}
+
+@media (max-width: 510px) {
+  /* line 37, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+  .content .logo-container .name h3 {
+    font-size: 20px;
+  }
+}
+
+/* line 43, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .app-store {
+  position: absolute;
+  bottom: 75px;
+  left: 0;
+  height: auto;
+  width: 100%;
+}
+
+/* line 50, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .app-store img {
+  width: 125px;
+  position: absolute;
+}
+
+/* line 55, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .app-store img:first-child {
+  left: 25%;
+}
+
+/* line 59, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+.content .logo-container .app-store img:last-child {
+  right: 25%;
+}
+
+@media (max-width: 510px) {
+  /* line 64, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+  .content .logo-container .app-store img:first-child {
+    left: 15% !important;
+  }
+  /* line 68, /Users/KoltonG/Code/Glow/Glow-Site/app/public/stylesheets/components/_content.scss */
+  .content .logo-container .app-store img:last-child {
+    right: 15% !important;
+  }
+}
